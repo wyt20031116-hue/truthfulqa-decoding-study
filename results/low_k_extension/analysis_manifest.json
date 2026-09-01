@@ -1,0 +1,26 @@
+{
+  "input": "outputs/qwen3_nf4_low_k_extension_5000/judgments.csv",
+  "human_audit": "outputs/qwen3_nf4_audit_validation_200/item_level_validation_200.csv",
+  "n_rows": 5000,
+  "n_prompt_settings": 1000,
+  "n_prompts": 50,
+  "repetitions_per_cell": 5,
+  "top_k_values": [
+    1,
+    2,
+    5,
+    10
+  ],
+  "temperatures": [
+    0.1,
+    0.3,
+    0.7,
+    1.0,
+    1.5
+  ],
+  "aggregation": "Average five repetitions within prompt-setting, then calculate means and normal 95% CIs across 50 prompts.",
+  "comparisons": "Paired prompt-level differences for k=1,2,5 versus k=10, separately by temperature and marginally over temperature.",
+  "sensitivity": "Map each Qwen3 score to its inverse-probability-weighted mean human score in the completed 200-row audit, then aggregate by low-k setting.",
+  "sensitivity_limit": "The audit came from the main pure design, not the low-k extension. Calibrated estimates are extrapolative sensitivity results, not direct low-k human validation.",
+  "chart_contract": "Line charts use top-k on the ordered x-axis and one visually distinct curve per temperature; pure top-p results are not overlaid."
+}

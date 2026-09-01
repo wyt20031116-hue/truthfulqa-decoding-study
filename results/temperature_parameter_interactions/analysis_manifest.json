@@ -1,0 +1,9 @@
+{
+  "input": "results/pure_pk_main_25rep_revised/tables/prompt_setting_means.csv",
+  "analysis_grain": "50 prompt means per decoding setting; each mean averages 25 repetitions",
+  "model": "OLS with categorical temperature, categorical top-p or top-k, their full interaction, and prompt fixed effects",
+  "uncertainty": "CR1 sandwich covariance clustered by prompt for joint Wald tests; t intervals across 50 prompt-level difference-in-differences",
+  "multiple_testing": "Benjamini-Hochberg correction across 14 metrics within each interaction family",
+  "interpretation": "Direct-generation metrics are primary. Correctness and informativeness remain provisional Qwen3-NF4 outcomes.",
+  "excluded_metric": "corpus_distinct_2 was excluded because it is undefined for 283 prompt-settings with insufficient bigrams; corpus_distinct_1, exact uniqueness, and pairwise token distance remain available."
+}

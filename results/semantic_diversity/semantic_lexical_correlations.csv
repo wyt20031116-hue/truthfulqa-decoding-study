@@ -1,0 +1,16 @@
+decoding_mode,comparison_metric,spearman_rho,p_value,n
+all,unique_answer_rate,0.8350374711930741,0.0,2250
+all,pairwise_token_jaccard_distance,0.9190178179983474,0.0,2250
+all,corpus_distinct_1,0.8880317132044789,0.0,2250
+all,within_answer_distinct_1,-0.5087478056791906,2.0432335918050922e-148,2250
+all,word_length,0.36014282499365924,7.154341418431749e-70,2250
+pure_top_p,unique_answer_rate,0.8680770962098828,8.498645647531257e-306,1000
+pure_top_p,pairwise_token_jaccard_distance,0.9219929766585194,0.0,1000
+pure_top_p,corpus_distinct_1,0.9068774256393329,0.0,1000
+pure_top_p,within_answer_distinct_1,-0.526561589314745,2.0399734050184333e-72,1000
+pure_top_p,word_length,0.3706486136243056,6.37471774816693e-34,1000
+pure_top_k,unique_answer_rate,0.7969704997375756,1.5942716036538044e-275,1250
+pure_top_k,pairwise_token_jaccard_distance,0.9098029802477184,0.0,1250
+pure_top_k,corpus_distinct_1,0.859402187910881,0.0,1250
+pure_top_k,within_answer_distinct_1,-0.48787535158817574,9.914754548957032e-76,1250
+pure_top_k,word_length,0.3524677452717253,7.153591669808741e-38,1250

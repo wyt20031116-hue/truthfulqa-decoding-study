@@ -1,0 +1,12 @@
+{
+  "input": "runs/main_50q_45pure_settings_25rep/generations.csv",
+  "input_rows": 56250,
+  "prompt_settings": 2250,
+  "answers_per_prompt_setting": 25,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dimension": 384,
+  "embedding_cache": "analysis/semantic_diversity/embeddings_float32.npy",
+  "metric": "Mean of 1 - cosine similarity over all 300 answer pairs within each prompt-setting",
+  "near_duplicate_threshold": 0.95,
+  "judge_independent": true
+}

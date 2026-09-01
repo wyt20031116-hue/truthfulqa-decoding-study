@@ -1,0 +1,19 @@
+{
+  "input": "runs/mechanism_50q_21settings_5rep/generations_with_mechanism.csv",
+  "token_steps": "runs/mechanism_50q_21settings_5rep/token_steps.csv",
+  "answer_rows": 5250,
+  "token_rows": 90986,
+  "question_setting_cells": 1050,
+  "questions": 50,
+  "uncertainty_unit": "question",
+  "aggregation": "five repetitions within question-setting, then 50 questions",
+  "model_scope": "primary mechanism-diversity associations include question fixed effects and CR1 standard errors clustered by question; estimates are not causal mediation",
+  "outputs": {
+    "tables": 8,
+    "figures": 12
+  },
+  "k1_tied_steps": 71,
+  "k1_token_steps": 12092,
+  "k1_tie_rate": 0.005871650678134304,
+  "valid": true
+}

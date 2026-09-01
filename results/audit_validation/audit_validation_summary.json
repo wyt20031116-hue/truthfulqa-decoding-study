@@ -1,0 +1,17 @@
+{
+  "audit_n": 200,
+  "correctness_exact_unweighted": 0.635,
+  "correctness_exact_weighted": 0.7132750000000001,
+  "correctness_mae_unweighted": 0.1975,
+  "correctness_mae_weighted": 0.155625,
+  "informativeness_mae_unweighted": 0.22375,
+  "informativeness_mae_weighted": 0.195440625,
+  "qwen3_mean_correctness_weighted": 0.4552999999999999,
+  "human_mean_correctness_weighted": 0.39608750000000004,
+  "qwen3_mean_informativeness_weighted": 0.360265625,
+  "human_mean_informativeness_weighted": 0.5073000000000001,
+  "boundary_0_to_0.5_n": 45,
+  "boundary_0.5_to_0_n": 2,
+  "low_confidence_n": 0,
+  "needs_adjudication_n": 57
+}

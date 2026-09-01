@@ -1,0 +1,14 @@
+{
+  "full_results": "results/pure_pk_main_25rep_revised/tables/marginal_effect_summary.csv",
+  "human_audit": "data/human_audit_item_level_200.csv",
+  "audit_rows": 200,
+  "audit_cells": 10,
+  "method": "Add the inverse-probability-weighted mean human-minus-judge discrepancy within each mode-temperature cell to the full-run Qwen3-NF4 mean.",
+  "uncertainty": "Approximate 95% CI combines the across-prompt full-run SE and the weighted audit-adjustment SE in quadrature; bounded metrics are clipped to [0,1].",
+  "conservative_correctness": "Full-run strict accuracy, equivalent to recoding every Qwen3 correctness=0.5 judgment as 0.",
+  "limitations": [
+    "Only 20 audited items are available in each mode-temperature cell.",
+    "The audit was deliberately stratified toward 0.5 and known error patterns; weights correct the sampling design but do not eliminate model or reviewer error.",
+    "Audit-adjusted estimates are sensitivity estimates, not fully human-labelled population means."
+  ]
+}

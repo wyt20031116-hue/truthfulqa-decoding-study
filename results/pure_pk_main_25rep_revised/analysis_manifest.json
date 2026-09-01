@@ -1,0 +1,21 @@
+{
+  "input": "outputs/qwen3_nf4_pure_56250/judgments.csv",
+  "n_rows": 56250,
+  "n_prompts": 50,
+  "n_repetitions": 25,
+  "settings": {
+    "pure_top_k": 25,
+    "pure_top_p": 20
+  },
+  "aggregation": "Average 25 repetitions within each prompt-setting, then average across 50 prompts.",
+  "uncertainty": "95% normal CIs across 50 prompt means are saved in tables and clipped to [0,1] for bounded metrics; main curves omit overlapping ribbons.",
+  "diversity": {
+    "within_answer_distinct_1_2": "Lexical non-repetition inside individual answers.",
+    "unique_answer_rate": "Exact normalized answer uniqueness among 25 repetitions.",
+    "pairwise_token_jaccard_distance": "Mean lexical-set distance over all answer pairs among 25 repetitions.",
+    "corpus_distinct_1_2": "Distinct n-grams pooled across the 25 answers without crossing answer boundaries."
+  },
+  "curve_rule": "Pure top-p and pure top-k remain separate; temperature plots use one curve per p or k.",
+  "latency_definition": "Qwen2.5 model_generation_latency_seconds; judge runtime is excluded.",
+  "judge_limitation": "Correctness and informativeness are provisional Qwen3-NF4 scores and require the stratified human-audit sensitivity analysis."
+}

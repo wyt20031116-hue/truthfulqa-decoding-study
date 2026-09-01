@@ -1,0 +1,19 @@
+{
+  "audit_n": 200,
+  "unique_prompts": 48,
+  "weighted_correctness_exact_rate": 0.7132750000000001,
+  "weighted_correctness_mae": 0.155625,
+  "weighted_informativeness_mae": 0.195440625,
+  "weighted_qwen3_correctness": 0.4552999999999999,
+  "weighted_human_correctness": 0.39608750000000004,
+  "weighted_correctness_bias_qwen_minus_human": 0.05921249999999989,
+  "weighted_qwen3_informativeness": 0.360265625,
+  "weighted_human_informativeness": 0.5073000000000001,
+  "weighted_informativeness_bias_qwen_minus_human": -0.1470343750000001,
+  "human_0_qwen3_0_5_n": 45,
+  "human_0_n": 105,
+  "mode_contrast_direction_preserved_n": 3,
+  "mode_contrast_temperature_n": 5,
+  "recommended_decision": "do_not_resume_full_56250_judging_until_supervisor_reviews_item_level_results",
+  "interpretation": "Qwen3-NF4 systematically uses 0.5 for answers the human audit scores 0; audit correction changes some mode contrasts even when the best-temperature result within each mode is preserved."
+}

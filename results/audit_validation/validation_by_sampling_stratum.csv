@@ -1,0 +1,8 @@
+sampling_stratum,n,correctness_exact,correctness_mae,informativeness_mae
+pattern_folklore_action,10,0.9,0.05,0.225
+pattern_hedged_claim,10,0.8,0.15,0.2
+pattern_incomplete,10,1.0,0.0,0.125
+pattern_mixed_claim,10,1.0,0.0,0.1
+score_0,40,0.925,0.0625,0.275
+score_0.5,80,0.2,0.4,0.184375
+score_1,40,0.925,0.075,0.3125

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite this repository and the associated working paper."
+title: "Decoding controls and TruthfulQA responses"
+type: software
+authors:
+  - family-names: Wu
+    given-names: Yutong
+affiliation: University of Waterloo
+year: 2026
+repository-code: "https://github.com/wyt20031116-hue/truthfulqa-decoding-study"
+abstract: >-
+  Code, processed data, and reproducibility materials for a repeated-generation
+  study of temperature, top-p, and top-k using Qwen2.5-7B-Instruct on TruthfulQA.
