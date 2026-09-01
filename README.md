@@ -106,8 +106,9 @@ upstream terms.
 Citation metadata are provided in `CITATION.cff`. The manuscript is a working
 paper; update its publication fields if a permanent version becomes available.
 
-## License status
+## License
 
-A software and data license has not yet been selected. Choose and add the
-appropriate license before making the repository public. Upstream datasets and
-model artifacts remain subject to their own terms.
+The original code in this repository is released under the MIT License; see
+[`LICENSE`](LICENSE). TruthfulQA source data, model weights, generated outputs,
+and other third-party artifacts remain subject to their respective upstream
+licenses and terms. The MIT License does not override those upstream terms.
